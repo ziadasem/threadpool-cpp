@@ -1,12 +1,13 @@
-#pragma once
+#ifndef _ThreadPool_
+#define _ThreadPool_
+
 #include <thread>
 #include <condition_variable>
 #include <vector>
 #include <queue>
 #include <functional> 
 
-#include <iostream>
-#define print(X) {std::cout<<X<<std::endl;}
+
 
 class ThreadPool {
 private:
@@ -30,3 +31,4 @@ public:
     int getThreadsNumber() const;
 };
 
+#endif 
