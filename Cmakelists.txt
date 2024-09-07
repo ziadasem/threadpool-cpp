@@ -7,12 +7,10 @@ project(Threadpool)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Create a library from the source files in this module
-
 
 option(GEN_EXE "Generate execuatable with the library, by default is true" ON)
 
-#add_library(threadpool src/threadpool.cpp)
+add_library(threadpool src/threadpool.cpp)
 if(GEN_EXE)
    add_executable(threadpool
         src/testing_thread_pool.cpp
