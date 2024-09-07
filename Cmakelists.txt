@@ -12,7 +12,7 @@ option(GEN_EXE "Generate execuatable with the library, by default is true" ON)
 
 add_library(threadpool src/threadpool.cpp)
 if(GEN_EXE)
-   add_executable(threadpool
+   add_executable(threadpooltest
         src/testing_thread_pool.cpp
         src/threadpool.cpp
     )
