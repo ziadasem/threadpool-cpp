@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-option(GEN_EXE "Generate execuatable with the library, by default is true" ON)
+option(GEN_TP_EXE "Generate an execuatable for testing Thread Pool, by default is true" ON)
 
 add_library(threadpool src/threadpool.cpp)
 if(GEN_EXE)
